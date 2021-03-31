@@ -1,22 +1,16 @@
 /*import React, { useState } from 'react';*/
 
-const InputLine = ( {label,placeholder, userInput, setInput }) => {
+const InputLine = ( {label,placeholder, userInput, setUserInput}) => {
 
-    
-
-    const handleChange = (e) => {
-        setInput(e.currentTarget.value);
+    const myChange = (e) => {
+        setUserInput(e.target.value);
     }
 
-    /*const handleSubmit = (e) => {
-        e.preventDefault();
-        addTask(userInput);
-        setUserInput("");
-    }*/
+
     return (
         <div>
             <label >{label}: </label>
-            <input type="text" value={userInput}  onChange={handleChange} placeholder={placeholder}/>
+            <input data-testid="myTestInput" value={userInput} type="number" onChange={myChange}   placeholder={placeholder}/>
         </div>
             
             
