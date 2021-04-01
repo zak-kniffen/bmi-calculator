@@ -3,7 +3,9 @@
 const InputLine = ( {label,placeholder, userInput, setUserInput}) => {
 
     const myChange = (e) => {
+        if (e.target.value >= 0){
         setUserInput(e.target.value);
+        }
     }
 
 
