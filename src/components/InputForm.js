@@ -17,8 +17,8 @@ const InputForm = () => {
         console.log(e);
     }
     return (
-        <form style={{margin: 'auto', width:"50%"}}onSubmit={handleSubmit}>
-            <InputLine setUserInput={setWeightInput} userInput={weightInput} label={"Weight in lb's"} placeholder={"Enter weight"}/>
+        <form style={{margin: 'auto', width:"75%"}}onSubmit={handleSubmit}>
+            <InputLine setUserInput={setWeightInput} userInput={weightInput} label={"Weight in lbs"} placeholder={"Enter weight"}/>
             <InputLine setUserInput={setFeetInput} userInput={feetInput} label={"Height in feet"} placeholder={"Enter height"}/>
             <InputLine setUserInput={setInchesInput} userInput={inchesInput} label={"...and inches"} placeholder={"Enter height"}/>
             <h3>BMI = {isFinite(BMI_calculation) ? BMI_calculation : 0}
